@@ -143,7 +143,7 @@ local changingDistance = false
 local walkspeed = 16
 local jumppower = 50
 
-local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/fireztron/uwuware-ui-library/main/ui.lua', true))()
 local window = lib:CreateWindow('Era of althea hack')
 window:AddLabel({text = "alixjaffar @ github"})
 window:AddToggle({text = 'auto quest', state = autoQuest, callback = function(v) 
