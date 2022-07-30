@@ -1,4 +1,8 @@
 repeat wait() until game:GetService("Players").LocalPlayer.Character
+local a=game.Players.LocalPlayer.Character
+a.Parent=nil
+a.HumanoidRootPart:Destroy()
+a.Parent=workspace
 
 --// Codes
 
@@ -141,7 +145,7 @@ local changingDistance = false
 local walkspeed = 16
 local jumppower = 50
 
-local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/fireztron/uwuware-ui-library/main/ui.lua', true))()
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/bloodball/secret/main/Ari?token=ARLRDLJUDKAMGJU62RNLNR27VWAGQ', true))()
 local window = lib:CreateWindow('Era of althea hack')
 window:AddLabel({text = "alixjaffar @ github"})
 window:AddToggle({text = 'auto quest', state = autoQuest, callback = function(v) 
