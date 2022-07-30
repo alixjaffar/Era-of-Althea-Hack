@@ -1,6 +1,5 @@
 repeat wait() until game:GetService("Players").LocalPlayer.Character
 
-game["\83\104\117\116\100\111\119\110"](game)
 
 --// Codes
 
@@ -143,25 +142,7 @@ local changingDistance = false
 local walkspeed = 16
 local jumppower = 50
 ------(Library UI)
-local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/bloodball/secret/main/Ari?token=ARLRDLJUDKAMGJU62RNLNR27VWAGQ', true))()
-
-local main = library:CreateWindow('Window', 0) -- the 0 can changed into a positive/negative integer to change window size because i was too lazy to make the auto-resizer accurate.
-local toggle = main:Toggle('Toggle', function(state)
-print(state)
-end)
-local button = main:Button('Button', function()
-game.Players.LocalPlayer.Character:BreakJoints()
-end)
-local slider = main:Slider('Slider', {max=100}, function(a)
-print(a)
-end)
-local textbox = main:TextBox('TextBox', 'Default, function(b)
-warn(b)
-end)
-local section = main:Section('Section')
-local bind = main:Bind('Bind', Enum.KeyCode.V, function(v)
-error(v)
-end)
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/fireztron/uwuware-ui-library/main/ui.lua', true))()
 -------
 local window = lib:CreateWindow('Era of althea hack')
 window:AddLabel({text = "alixjaffar @ github"})
