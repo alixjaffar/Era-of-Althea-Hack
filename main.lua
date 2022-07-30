@@ -1,11 +1,9 @@
---v5.3, check v3rm thread to see if this is updated: https://v3rmillion.net/showthread.php?tid=1114065
-
 repeat wait() until game:GetService("Players").LocalPlayer.Character
 
 --// Codes
 
 spawn(function()
-local codes = {"2MVISITS!", "AhwokenTwitter!", "1MVISITS!", "15KLIKES!", "SHUTDOWNADOPTME!", "MaineEOA", "ShutdownForFixes!", "AltheaHype!", "ShutdownForFixesA!", "ShutdownForFixes2!", "4MILVISITS!", "25LIKES!", "MyApologies!", "NewUpdate??"}
+local codes = {"2MVISITS!", "DetestThrewItBackOnMe", "1MVISITS!", "15KLIKES!", "SHUTDOWNADOPTME!", "MaineEOA", "ShutdownForFixes!", "AltheaHype!", "ShutdownForFixesA!", "ShutdownForFixes2!", "4MILVISITS!", "25LIKES!", "MyApologies!", "NewUpdate??"}
 local Event = game:GetService("ReplicatedStorage").Remotes.RedeemCode
 for i,v in pairs(codes) do
    Event:InvokeServer(v)
@@ -157,7 +155,7 @@ window:AddToggle({text = 'auto farm', state = farm, callback = function(v)
         farm = v; 
     end
 end})
-window:AddList({text = 'mob', state = mobName, values = {"Wolf","Dire Wolf","Orc", "Golem", "Abu", "Stork", "G-Knight", "Vedalia", "Scorpion", "Thonk, The Orc Lord", "Hleam Eyes", "Rog, The Bearded One"}, callback = function(v) mobName = v end})
+window:AddList({text = 'mob', state = mobName, values = {"Wolf","Dire Wolf","Orc", "Golem", "Abu", "Stork", "G-Knight", "Vedalia", "Scorpion", "Conjured Skeleton", "Thonk, The Orc Lord", "Hleam Eyes", "Rog, The Bearded One"}, callback = function(v) mobName = v end})
 window:AddList({text = 'distance option', state = distanceOption, values = {"Default Distances", "Custom Distance"}, callback = function(v) distanceOption = v end})
 window:AddSlider({text = 'distance from mob', flag = "distancefrommob", value = 8, min = 0, max = 20, float = 0.1, callback = function(v) mobDistance = v; changingDistance = true; wait(); changingDistance = false end})
 window:AddSlider({text = 'tween speed', flag = "tweenspeeder", value = 150, min = 10, max = 500, callback = function(v) tweenspeed = v end})
