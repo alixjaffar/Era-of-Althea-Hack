@@ -147,7 +147,7 @@ local changingDistance = false
 local walkspeed = 16
 local jumppower = 50
 ------(Library UI)
-local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/fireztron/uwuware-ui-library/main/ui.lua', true))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/alixjaffar/Roblox-UI-Library/main/main.lua", true))()
 -------
 local window = lib:CreateWindow('Era of althea hack')
 window:AddLabel({text = "alixjaffar @ github"})
